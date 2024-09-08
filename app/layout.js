@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <div className="flex">
-          <Navbar /> {/* Include the Navbar component here */}
-          <main className="flex-1 ml-64 p-4">{children}</main>
+        <div className="flex ">
+          <Navbar className="w-12"/> 
+          <main className="w-full bg-yellow-500">{children}</main>
         </div>
       </body>
     </html>

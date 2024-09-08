@@ -27,7 +27,7 @@ export default function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div className="h-screen flex flex-col gap-6 absolute sidebar-container z-[4000] backdrop-blur-sm bg-red-600 px-4">
+    <div className="h-screen flex flex-col gap-6  z-[4000] backdrop-blur-sm bg-red-600 opacity-50 px-4">
       <div
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
@@ -36,9 +36,9 @@ export default function Navbar() {
           <img
             src="/images/logo.png"
             alt="Sabrain Logo"
-            className="h-20 w-20 object-cover mb-2 mt-2"
+            className="h-24 w-24 object-cover mb-2 mt-2"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex whitespace-nowrap">
             Sabah&nbsp;
             <span>| SABRAIN</span>
           </p>
