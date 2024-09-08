@@ -10,10 +10,10 @@ export const NavButtons = (props) => {
   const { icon, brandColor, title, titleClassName, size="1x", className } = props;
   const hasTitle = title ? true : false;
   const snapSfx = "./sounds/snap.wav";
-  const confirmSfx = "./sounds/confirm.wav";
+  const confirmSfx = "./sounds/clickedShort.wav";
 
   const [playSnap, { stop: stopSnap }] = useSound(snapSfx, { volume: 0.25 });
-  const [playConfirm] = useSound(confirmSfx, { volume: 0.25 });
+  const [playConfirm] = useSound(confirmSfx, { volume: 0.50 });
 
   return (
     <div

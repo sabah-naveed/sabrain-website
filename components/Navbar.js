@@ -16,21 +16,25 @@ import { NavButtons } from "./NavButtons";
 export default function Navbar() {
   const menu = [
     { name: "Home", href: "/", icon: <LuHome/> },
-    { name: "About", href: "/about", icon: <LuPenTool/> },
-    { name: "Skills", href: "/skills", icon: <LuPencilRuler/> },
+    // { name: "About", href: "/about", icon: <LuPenTool/> },
+    // { name: "Skills", href: "/skills", icon: <LuPencilRuler/> },
     { name: "Work", href: "/work", icon: <LuBriefcase/> },
-    { name: "Projects", href: "/projects", icon: <LuPaintbrush/> },
-    { name: "Hobbies", href: "/hobbies", icon: <LuShovel/> },
+    // { name: "Projects", href: "/projects", icon: <LuPaintbrush/> },
+    // { name: "Hobbies", href: "/hobbies", icon: <LuShovel/> },
     { name: "Contact", href: "/contact", icon: <LuContact2/> },
   ];
   const [isShownHoverContent, setIsShownHoverContent] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div className="h-screen flex flex-col gap-6  z-[4000] backdrop-blur-sm bg-red-600 opacity-50 px-4">
+    <div className="h-screen flex flex-col gap-6 z-[4000] px-4 relative">
+      <div className="absolute inset-0 -z-10 blur-md opacity-30">
+        <img src="/images/waves.jpeg" alt="waves" className="object-cover h-full w-full" />
+      </div>
       <div
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
+        className=""
       >
         <div className="logo w-full flex flex-col items-center">
           <img
@@ -43,7 +47,7 @@ export default function Navbar() {
             <span>| SABRAIN</span>
           </p>
         </div>
-        <div className="flex flex-col gap-4 mt-4">
+        <div className="flex flex-col gap-4 mt-8">
           {menu.map((item, index) => {
             return (
               <div key={item.name} className="sidebar-item flex justify-start">

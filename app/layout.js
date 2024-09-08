@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans antialiased">
         <div className="flex ">
           <Navbar className="w-12"/> 
-          <main className="w-full bg-yellow-500">{children}</main>
+          <main className="w-full bg-gray-950">{children}</main>
         </div>
       </body>
     </html>
