@@ -7,10 +7,13 @@ import SabahAvatar from "@/components/SabahAvatar";
 export default function Home() {
   return (
     <div className="flex items-center justify-between h-screen bg-gray-950 mr-10">
-      <div>
+      <div className="absolute inset-0 -z-5 opacity-90">
+        <img src="/images/herobg.png" alt="waves" className="object-cover h-full w-full" />
+      </div>
+      <div className="z-10">
         <SabahAvatar />
       </div>
-      <div className="flex flex-col ">
+      <div className="flex flex-col z-10">
         <h1 className="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
           <div className="text-left">Hi</div>
           <div>
@@ -18,7 +21,7 @@ export default function Home() {
           </div>
         </h1>
         <div className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-4 mr-10 text-right">
-          I am:
+          I am: 
           <Typewriter
             onInit={(typewriter) => {
               typewriter

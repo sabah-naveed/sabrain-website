@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <div className="h-screen flex flex-col gap-6 z-[4000] px-4 relative">
       <div className="absolute inset-0 -z-10 blur-md opacity-30">
-        <img src="/images/waves.jpeg" alt="waves" className="object-cover h-full w-full" />
+        <img src="/images/purpWaves.jpg" alt="waves" className="object-cover h-full w-full" />
       </div>
       <div
         onMouseEnter={() => setIsHovering(true)}
