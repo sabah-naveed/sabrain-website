@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <div className="flex ">
-          <Navbar className="w-12"/> 
-          <main className="w-full bg-gray-950">{children}</main>
+        <div className="relative flex ">
+          <Navbar className="fixed w-12 h-screen "/> 
+          <main className="ml-36 w-full h-full ">{children}</main>
         </div>
       </body>
     </html>

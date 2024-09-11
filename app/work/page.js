@@ -11,13 +11,20 @@ import { experiences } from "/public/constants/index.js";
 
 const WorkPage = () => {
   return (
-    <div className="flex justify-between h-screen bg-gray-950 mr-10">
-      <div className="absolute inset-0 -z-5 opacity-90">
-        <img src="/images/herobg.png" alt="waves" className="object-cover h-full w-full" />
+    <div className="relative flex justify-between h-screen mr-10 bg-parallax bg-cover bg-fixed">
+      {/* Background */}
+      <div 
+      className="fixed inset-0 -z-10 bg-fixed bg-center bg-cover" 
+      style={{ backgroundImage: "url('/images/herobg.png')"}}>
+        {/* <img
+          src="/images/herobg.png"
+          alt="waves"
+          className="absolute inset-0 "
+        /> */}
       </div>
+      {/* Content */}
       <div className="relative z-10 ml-10">
         <motion.div variants={textVariant()}>
-          
           <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
             Work Experience.
           </h2>
@@ -58,10 +65,7 @@ const ExperienceCard = ({ experience }) => (
       }
     >
       <h3 className="vertical-timeline-element-title">{experience.title}</h3>
-      <p
-        className="vertical-timeline-element-subtitle"
-        style={{ margin: 0 }}
-      >
+      <p className="vertical-timeline-element-subtitle" style={{ margin: 0 }}>
         {experience.company_name}
       </p>
 

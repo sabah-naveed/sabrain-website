@@ -29,7 +29,7 @@ export default function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div className="h-screen flex flex-col gap-6 z-[4000] px-4 relative">
+    <div className="fixed h-screen flex flex-col gap-6 z-[4000] px-4">
       <div className="absolute inset-0 -z-10 blur-md opacity-30">
         <img src="/images/purpWaves.jpg" alt="waves" className="object-cover h-full w-full" />
       </div>
