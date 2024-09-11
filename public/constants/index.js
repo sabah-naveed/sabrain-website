@@ -56,10 +56,30 @@ const experiences = [
     iconBg: "#ffffff",
     date: "June 2023 - Current",
     points: [
-      "Pioneered an AI chatbot utilizing LangChain, OpenAI, and NJT APIs to revolutionize user experience for trip planning",
-      "Spearhead production deployment of seamless integration with AWS services to make API endpoint for chatbot",
-      "Cut transit health checks by 50% by automating investigation and testing of trip planner anomalies in internal tools",
+      "Published an AI chatbot using OpenAI API, NJ Transit APIs, and RAG functionality to revolutionize customer experience by providing real-time transit information, automated trip planning, and quick resolution of frequently asked questions",
+      "Improved chatbot API endpoint efficiency by 89% using custom functions and fast AWS services: ECS and DynamoDB",
       "Updated GPS data from trains using SQL to improve real-time train tracking for 20K users on the Departure Vision app",
+    ],
+  },
+  {
+    title: "Theory of Computation Course Assistant",
+    company_name: "Stevens Institute of Technology",
+    icon: "/workTimeline/stevens.jpeg",
+    iconBg: "#a32638",
+    date: "September 2024 - Current",
+    points: [
+      "Graded problem sets, held weekly lab recitations, and office hours to aid 100+ students with theory of computation concepts",
+    ],
+  },
+  {
+    title: "Code In Place Section Leader",
+    company_name: "Stanford University",
+    icon: "/workTimeline/stanford.png",
+    iconBg: "#ffffff",
+    date: "April 2024 - June 2024",
+    points: [
+      "Led Python tutorials for 10 global students covering fundamentals and coding practices in Stanford's intro course, CS106A",
+      "Improved students' coding skills, resulting in a 30% increase in assignment completion rates"
     ],
   },
   {
@@ -69,10 +89,8 @@ const experiences = [
     iconBg: "#a32638",
     date: "September 2021 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Graded problem sets, held weekly lab recitations, and office hours to aid 120+ students with discrete structures concepts",
+      "Delivered engaging coding labs to help students solidify logic, graph & number theory, computer networks, security, etc.",
     ],
   },
   {
