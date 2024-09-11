@@ -12,6 +12,8 @@ import {
 } from "react-icons/lu";
 import Link from "next/link";
 import { NavButtons } from "./NavButtons";
+import { Socials } from "./Socials";
+
 
 export default function Navbar() {
   const menu = [
@@ -19,9 +21,9 @@ export default function Navbar() {
     // { name: "About", href: "/about", icon: <LuPenTool/> },
     // { name: "Skills", href: "/skills", icon: <LuPencilRuler/> },
     { name: "Work", href: "/work", icon: <LuBriefcase/> },
-    // { name: "Projects", href: "/projects", icon: <LuPaintbrush/> },
+    { name: "Projects", href: "/projects", icon: <LuPaintbrush/> },
     // { name: "Hobbies", href: "/hobbies", icon: <LuShovel/> },
-    { name: "Contact", href: "/contact", icon: <LuContact2/> },
+    // { name: "Contact", href: "/contact", icon: <LuContact2/> },
   ];
   const [isShownHoverContent, setIsShownHoverContent] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
@@ -34,7 +36,7 @@ export default function Navbar() {
       <div
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
-        className=""
+        className="flex flex-col justify-between h-full pt-8 pb-8"
       >
         <div className="logo w-full flex flex-col items-center">
           <img
@@ -47,7 +49,7 @@ export default function Navbar() {
             <span>| SABRAIN</span>
           </p>
         </div>
-        <div className="flex flex-col gap-4 mt-8">
+        <div className="flex flex-col gap-4 ">
           {menu.map((item, index) => {
             return (
               <div key={item.name} className="sidebar-item flex justify-start">
@@ -67,7 +69,12 @@ export default function Navbar() {
               </div>
             );
           })}
+          
         </div>
+        <div className="">
+            <h2 className="text-white text-[18px] font-bold cursor-pointer text-center mb-2">My Socials</h2>
+            <Socials />
+          </div>
       </div>
     </div>
   );

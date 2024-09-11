@@ -11,13 +11,9 @@ import { experiences } from "/public/constants/index.js";
 
 const WorkPage = () => {
   return (
-    <div className="relative h-screen">
+    <div className="flex justify-between h-screen bg-gray-950 mr-10">
       <div className="absolute inset-0 -z-5 opacity-90">
-        <img
-          src="/images/herobg.png"
-          alt="waves"
-          className="object-cover h-full w-full"
-        />
+        <img src="/images/herobg.png" alt="waves" className="object-cover h-full w-full" />
       </div>
       <div className="relative z-10 ml-10">
         <motion.div variants={textVariant()}>
