@@ -5,42 +5,23 @@ import Typewriter from "typewriter-effect";
 import SabahAvatar from "@/components/SabahAvatar";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import About from "@/components/About";
-
-
-const social = [
-  {
-    name: "GitHub",
-    icon: FiGithub,
-    link: "https://github.com/sabah-naveed",
-    brandColor: "#802bfc",
-  },
-  {
-    name: "LinkedIn",
-    icon: FiLinkedin,
-    link: "https://www.linkedin.com/in/sabah-naveed/",
-    brandColor: "#0062ff",
-  },
-  {
-    name: "Instagram",
-    icon: FiInstagram,
-    link: "https://www.instagram.com/sabah.naveed/?igsh=ZDI4NGdsOG9wNHBz",
-    brandColor: "#dd2a7b",
-  },
-];
+import Profpic from "@/components/Profpic";
 
 export default function Home() {
   return (
     <div>
       <section>
-        <div className="flex flex-col md:flex-row items-center justify-between h-screen bg-gray-950">
-          <div className="absolute inset-0 -z-5 opacity-50">
-            <img
-              src="/images/herobg.png"
-              alt="waves"
-              className="h-full w-full"
-            />
-          </div>
-          <div className="flex sm:flex-col md:flex-row items-center justify-center w-full ">
+        <div
+          className="flex flex-col items-center justify-between h-screen bg-gray-950"
+          style={{
+            backgroundImage: "url('/images/herobg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            zIndex: -5,
+          }}
+        >
+          <div className="flex flex-col md:flex-row items-center justify-center w-full bg-red-500">
             <div className="flex flex-col items-start justify-center w-full z-10 px-4 sm:px-10 lg:px-20 ">
               <h1 className="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
                 <div className="text-left">Hi</div>
@@ -116,7 +97,7 @@ export default function Home() {
               </div>
             </div>
             <div className="z-10 w-full md:w-auto flex justify-center mt-10 md:mt-0 ">
-              <SabahAvatar />
+              <Profpic />
             </div>
           </div>
         </div>

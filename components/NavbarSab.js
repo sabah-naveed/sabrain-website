@@ -1,66 +1,78 @@
-"use client";
-import React from "react";
-import { useState } from "react";
-import {
-  LuHome,
-  LuPenTool,
-  LuPencilRuler,
-  LuBriefcase,
-  LuPaintbrush,
-  LuShovel,
-  LuContact2,
-} from "react-icons/lu";
-import Link from "next/link";
-import { NavButtons } from "./NavButtons";
-import { Socials } from "./Socials";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/navbar";
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+const navigation = [
+  { name: 'Home', href: '#', current: true },
+  { name: 'About', href: '#', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Business', href: '#', current: false },
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export default function NavbarSab() {
-  const menu = [
-    { name: "Home", href: "/", icon: <LuHome /> },
-    // { name: "About", href: "/about", icon: <LuPenTool/> },
-    // { name: "Skills", href: "/skills", icon: <LuPencilRuler/> },
-    { name: "Work", href: "/work", icon: <LuBriefcase /> },
-    { name: "Projects", href: "/projects", icon: <LuPaintbrush /> },
-    // { name: "Hobbies", href: "/hobbies", icon: <LuShovel/> },
-    // { name: "Contact", href: "/contact", icon: <LuContact2/> },
-  ];
-  const [isShownHoverContent, setIsShownHoverContent] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
-
   return (
-    <div className="fixed backdrop-blur-md navbar bg-base-50 z-50">
-      <div className="flex-1 ml-10">
-        <a className="btn btn-ghost text-xl">Sabrain</a>
+    <Disclosure as="nav" className="bg-gray-800">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            {/* Mobile menu button*/}
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <span className="absolute -inset-0.5" />
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className="block size-6 group-data-[open]:hidden" />
+              <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-[open]:block" />
+            </DisclosureButton>
+          </div>
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex shrink-0 items-center">
+              <img
+                alt="Sabrain"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                className="h-8 w-auto"
+              />
+            </div>
+            <div className="hidden sm:ml-6 sm:block">
+              <div className="flex space-x-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    aria-current={item.current ? 'page' : undefined}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'rounded-md px-3 py-2 text-sm font-medium',
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex-none mr-10">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>SomeTab</a>
-          </li>
-          <li>
-            <details>
-              <summary>Projects</summary>
-              <ul className="bg-base-100 rounded-t-none p-2">
-                <li>
-                  <a>Link 1</a>
-                </li>
-                <li>
-                  <a>Link 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+
+      <DisclosurePanel className="sm:hidden">
+        <div className="space-y-1 px-2 pb-3 pt-2">
+          {navigation.map((item) => (
+            <DisclosureButton
+              key={item.name}
+              as="a"
+              href={item.href}
+              aria-current={item.current ? 'page' : undefined}
+              className={classNames(
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                'block rounded-md px-3 py-2 text-base font-medium',
+              )}
+            >
+              {item.name}
+            </DisclosureButton>
+          ))}
+        </div>
+      </DisclosurePanel>
+    </Disclosure>
+  )
 }
