@@ -1,18 +1,3 @@
-// import {
-//     njtransit,
-//     stevens,
-//     tutcet,
-//     scoreio,
-//     njconnect,
-//     aipic,
-//     iphone,
-//     ui,
-//     creative,
-//     ghpage
-//   } from "../images";
-
-
-
 
 export const navLinks = [
   {
@@ -106,65 +91,65 @@ const experiences = [
   },
 ];
 
-// const projects = [
-//   {
-//     name: "NJ Connect",
-//     description:
-//       "AI-powered chatbot that enables customers to have a conversational experience when planning trips on NJ Transit.",
-//     tags: [
-//       {
-//         name: "langchain",
-//         color: "pink-text-gradient",
-//       },
-//       {
-//         name: "AWS",
-//         color: "orange-text-gradient",
-//       },
-//       {
-//         name: "OpenAI",
-//         color: "green-text-gradient",
-//       },
-//     ],
-//     image: njconnect,
-//     source_code_link:
-//       "https://www.linkedin.com/feed/update/urn:li:activity:7100948121068744704/",
-//   },
-//   {
-//     name: "Score.IO: Virtual Scoreboard",
-//     description:
-//       "Ad-free scoreboard for any sport or game. Whether you're at a sports game, playing a board game with your family, or competing in a challenge with a friend, Score.IO will be the reliable way to keep tabs on each team.",
-//     tags: [
-//       {
-//         name: "Swift",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "Figma",
-//         color: "pink-text-gradient",
-//       },
-//       {
-//         name: "XCode",
-//         color: "white-text-gradient",
-//       },
-//     ],
-//     image: scoreio,
-//     source_code_link:
-//       "https://apps.apple.com/us/app/score-io-virtual-scoreboard/id1642364306",
-//   },
-//   {
-//     name: "More Projects on the Way!",
-//     description:
-//       "In the mean time check out some of my other projects on Github! These include more advanced mobile apps, AI projects, etc.",
-//     tags: [
-//       {
-//         name: "Github",
-//         color: "orange-text-gradient",
-//       },
-//     ],
-//     image: ghpage,
-//     source_code_link: "https://github.com/sabah-naveed",
-//   },
-// ];
+const projects = [
+  {
+    name: "NJ Connect",
+    description:
+      "AI-powered chatbot that enables customers to have a conversational experience when planning trips on NJ Transit.",
+    tags: [
+      {
+        name: "langchain",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "/images/njconnect.gif",
+    source_code_link:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7100948121068744704/",
+  },
+  {
+    name: "Score.IO: Virtual Scoreboard",
+    description:
+      "Ad-free scoreboard for any sport or game. Whether you're at a sports game, playing a board game with your family, or competing in a challenge with a friend, Score.IO will be the reliable way to keep tabs on each team.",
+    tags: [
+      {
+        name: "Swift",
+        color: "blue",
+      },
+      {
+        name: "Figma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "XCode",
+        color: "white-text-gradient",
+      },
+    ],
+    image: "/images/scorepage.gif",
+    source_code_link:
+      "https://apps.apple.com/us/app/score-io-virtual-scoreboard/id1642364306",
+  },
+  {
+    name: "More Projects on the Way!",
+    description:
+      "In the mean time check out some of my other projects on Github! These include more advanced mobile apps, AI projects, etc.",
+    tags: [
+      {
+        name: "Github",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: "/images/githubpage.png",
+    source_code_link: "https://github.com/sabah-naveed",
+  },
+];
 
 //   export { services, experiences, projects };
-export { experiences };
+export { experiences, projects };

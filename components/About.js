@@ -4,15 +4,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import SabahAvatar from "./SabahAvatar";
 
 export default function About() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  const textY = useTransform(scrollYProgress, [0, 1], [0, 300]);
   return (
     <div
-      className="w-full h-screen flex bg-slate-100 text-slate-950"
+      className="w-full h-screen flex items-center justify-center bg-slate-100 text-slate-950"
     >
       <div className="flex items-center justify-center p-10 text-center">
         <div>

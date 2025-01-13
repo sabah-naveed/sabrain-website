@@ -6,6 +6,7 @@ import SabahAvatar from "@/components/SabahAvatar";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import About from "@/components/About";
 import Profpic from "@/components/Profpic";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -108,9 +109,7 @@ export default function Home() {
         <About />
       </section>
       <section id="projects">
-        
-        
-        
+        <Projects/>
       </section>
     </div>
   );

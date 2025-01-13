@@ -2,10 +2,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Business', href: '#', current: false },
+  { name: 'Home', href: '#hero', current: true },
+  { name: 'About', href: '#about', current: false },
+  { name: 'Projects', href: '#projects', current: false },
+  // { name: 'Business', href: '#', current: false },
 ]
 
 function classNames(...classes) {
