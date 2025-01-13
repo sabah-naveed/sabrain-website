@@ -30,8 +30,8 @@ export default function NavbarSab() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Sabrain"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
+                src="/images/logo.png"
+                className="h-12 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">

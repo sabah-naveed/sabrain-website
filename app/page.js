@@ -10,9 +10,9 @@ import Profpic from "@/components/Profpic";
 export default function Home() {
   return (
     <div>
-      <section>
+      <section id="hero">
         <div
-          className="flex flex-col items-center justify-between h-screen bg-gray-950"
+          className="flex flex-col items-center justify-center h-screen bg-gray-950"
           style={{
             backgroundImage: "url('/images/herobg.png')",
             backgroundSize: "cover",
@@ -21,12 +21,17 @@ export default function Home() {
             zIndex: -5,
           }}
         >
-          <div className="flex flex-col md:flex-row items-center justify-center w-full bg-red-500">
-            <div className="flex flex-col items-start justify-center w-full z-10 px-4 sm:px-10 lg:px-20 ">
-              <h1 className="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
-                <div className="text-left">Hi</div>
-                <div>
-                  I'm <span className="text-[#915eff]">_Sabah</span>
+          <div className="z-10 w-full flex justify-center items-center pl-10 pr-10 pb-10">
+            <Profpic />
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center w-full ">
+            <div className="flex flex-col items-center justify-center w-full z-10 px-4 sm:px-10 lg:px-20 ">
+              <h1 className="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 ">
+                <div className="text-center sm:text-right flex flex-wrap sm:flex-nowrap ">
+                  <div className="whitespace-nowrap">Hi, </div>
+                  <div className="ml-1 sm:ml-0">
+                    I'm <span className="text-[#915eff]">_Sabah</span>
+                  </div>
                 </div>
               </h1>
               <div className="flex gap-4 mt-4 sm:flex-col md:flex-row">
@@ -64,8 +69,8 @@ export default function Home() {
                   <FiInstagram className="text-pink-500" />
                 </button>
               </div>
-              <div className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-4 mr-10 text-left">
-                I am:
+              <div className="text-[#dfd9ff] font-medium mt-4 text-center inline-flex flex-wrap items-center">
+                <span className="whitespace-nowrap mr-2">I am:</span>
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -96,136 +101,16 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="z-10 w-full md:w-auto flex justify-center mt-10 md:mt-0 ">
-              <Profpic />
-            </div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet. Est totam explicabo est cumque tenetur sit
-          velit placeat et iusto ipsa et galisum natus et dolorem eligendi. Sed
-          sunt tenetur et sequi harum eos officia quaerat ut commodi quia est
-          reprehenderit quia sed impedit natus sed accusamus ratione. Et vero
-          quia aut consequatur quisquam sed eveniet voluptatem hic voluptas
-          voluptatibus in aperiam voluptatem ab dolores sapiente sed quam
-          cupiditate. Sit neque quos et reiciendis ratione ad repellendus velit
-          sit libero reiciendis hic culpa sunt qui dolore ipsa. In labore eaque
-          et fuga beatae id aliquid omnis qui explicabo sint ea dignissimos
-          dignissimos ut Quis quae qui rerum iure. Ut provident eveniet non amet
-          recusandae eos tenetur quos. Id aspernatur nihil et eligendi
-          consequatur et incidunt quibusdam est nihil nisi vel voluptatem itaque
-          et accusantium repellat ea quos quaerat. Id itaque consequatur a amet
-          quia quo nulla quos aut quis doloremque 33 suscipit itaque. In iure
-          cupiditate non doloribus voluptates et omnis possimus ut eaque velit
-          et aperiam nostrum. Et dolores maxime vel dolor alias eum repellendus
-          consequatur. Et enim internos aut dolores nobis aut optio odit nam
-          galisum reprehenderit.
-        </p>
+      <section id="projects">
+        
+        
+        
       </section>
     </div>
   );

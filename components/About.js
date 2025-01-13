@@ -11,11 +11,10 @@ export default function About() {
   });
   const textY = useTransform(scrollYProgress, [0, 1], [0, 300]);
   return (
-    <div className="w-full h-screen flex bg-slate-950">
-      <div>
-        <SabahAvatar />
-      </div>
-      <div className="w-1/3 h-full flex items-center justify-center p-10">
+    <div
+      className="w-full h-screen flex bg-slate-100 text-slate-950"
+    >
+      <div className="flex items-center justify-center p-10 text-center">
         <div>
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
           <p className="text-lg leading-relaxed">
@@ -29,9 +28,7 @@ export default function About() {
           </p>
           <div className="flex justify-center mt-8">
             <div className="btn bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 p-[1px] rounded-lg">
-              <button className="btn px-6 py-2 rounded-lg">
-                Open Resume
-              </button>
+              <button className="btn px-6 py-2 rounded-lg">Open Resume</button>
             </div>
           </div>
         </div>
